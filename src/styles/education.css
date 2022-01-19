@@ -1,0 +1,31 @@
+.education-card {
+	background-color: #ffffff;
+	padding: 40px;
+	border-radius: 10px;
+	margin: 20px 10px 30px 10px;
+	overflow-wrap: anywhere;
+	width: 40%;
+	min-width: 680px;
+}
+
+.education-card:hover {
+	transform: translateY(-20px);
+}
+
+@media (max-width: 750px) {
+	.education-card {
+		padding: 10px;
+		overflow-wrap: anywhere;
+	}
+}
+
+.education-card:hover {
+	transform: translateY(-20px);
+}
+
+@media (max-width: 700px) {
+	.education-card {
+		min-width: 0px;
+		width: auto;
+	}
+}

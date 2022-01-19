@@ -1,13 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.skewed-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f0ffff;
+	transform: skewY(-1deg);
+	transform-origin: top left;
+}
+
+.blue-section {
+	background: #0050ff;
+	padding: 50px 20px 150px 20px;
+}
+.section-title {
+	margin: 0;
+	padding: 100px 0;
+	font-family: 'Nunito', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	color: black;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+@media (max-width: 700px) {
+	.main-content {
+		display: inline;
+	}
 }

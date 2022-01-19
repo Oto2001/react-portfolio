@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.banner {
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #0050ff;
+	background: radial-gradient(at 60% bottom, #0050ff 20%, #251a65 60%);
+}
+
+.banner-profile {
+	width: 600px;
+}
+
+.banner-title {
+	font-size: 4rem;
+	font-family: 'Montserrat';
+	max-width: 15ch;
+	color: white;
+	text-align: center;
+}
+
+.author-name {
+	color: rgb(246, 72, 87);
+}
+
+.banner-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-social-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 32px;
+}
+
+.banner-link:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 990px) {
+	.banner-profile {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-title {
+		font-size: 3rem;
+	}
+
+	.banner-main img {
+		width: 48px;
+	}
+}
