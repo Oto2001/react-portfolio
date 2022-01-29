@@ -7,9 +7,9 @@ function Contact() {
 			<h2 className="section-title" style={{ color: 'white' }}>
 				Contact Me
 			</h2>
-			<form action="submit">
-				<div method="POST" className="inputs">
-					<div className="half left form-section">
+			<form className="contacts-form" action="submit">
+				<div method="POST" className="contact-inputs">
+					<div className="form-section left">
 						<input
 							type="text"
 							id="input-name"
@@ -26,7 +26,7 @@ function Contact() {
 							minLength="3"
 						/>
 					</div>
-					<div className="half right form-section">
+					<div className="form-section right">
 						<textarea
 							name="message"
 							id="input-message"

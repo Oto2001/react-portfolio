@@ -1,4 +1,5 @@
 .navbar {
+	background: #3474e6;
 	background-color: #251a65;
 	position: fixed;
 	top: 0;
@@ -8,21 +9,73 @@
 	z-index: 10;
 }
 
-.nav-link {
-	transition: 0.3s ease;
+.navbar .logo {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: red;
 }
 
-.nav-link:hover {
-	padding-bottom: 5px;
-	border-bottom: 4px solid white;
-}
-
-.navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-	font-size: 2rem;
-	border: none;
-}
-
-.navbar-toggler {
+.navbar a {
 	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	color: lightblue;
+}
+
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.navbar ul li {
+	margin-left: 20px;
+}
+
+.navbar .toggle-button {
+	display: none;
+	color: white;
+	font-size: 2rem;
+	position: absolute;
+	right: 40px;
+}
+
+@media (max-width: 768px) {
+	.navbar .toggle-button {
+		display: block;
+	}
+
+	.navbar .container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar ul {
+		display: none;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.navbar li {
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.navbar ul.active {
+		display: flex;
+	}
 }

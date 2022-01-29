@@ -8,6 +8,7 @@
 .about-content {
 	position: relative;
 	top: 0;
+	margin: 0 10px;
 }
 
 .about-svg {
@@ -19,7 +20,7 @@
 	margin: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 	.about-svg {
 		display: none;
 	}

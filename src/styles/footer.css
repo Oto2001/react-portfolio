@@ -25,6 +25,9 @@ footer ul {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 1rem;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
 
 footer li {
@@ -55,12 +58,19 @@ footer li {
 	transform: scale(1.1);
 }
 
-.footer-profile {
-	width: 200px;
-}
-
 @media (max-width: 841px) {
 	footer {
 		gap: 1rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.footer-social img:hover {
+		transform: scale(1);
+	}
+
+	.footer-nav-link:hover {
+		color: rgb(212, 212, 212);
+		border-bottom: 0;
 	}
 }

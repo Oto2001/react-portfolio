@@ -11,7 +11,7 @@
 	padding: 40px;
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.2);
-	margin: 20px 10px 30px 10px;
+	margin: 20px 10px;
 }
 
 .project-card:hover {
@@ -54,11 +54,28 @@
 	border: 1px green solid;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	.project-card {
-		padding: 5px;
+		padding: 20px;
 	}
 	.project-card p {
 		display: inline;
+	}
+}
+
+@media (max-width: 576px) {
+	.demo-link:hover {
+		color: white;
+		background-color: green;
+		border: 0px;
+	}
+
+	.github-link:hover {
+		transform: scale(1);
+	}
+
+	.project-card:hover {
+		box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.2);
+		transform: scale(1);
 	}
 }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 .banner {
-	min-height: 600px;
+	min-height: 700px;
+	padding-top: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;

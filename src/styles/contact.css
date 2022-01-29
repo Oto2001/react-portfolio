@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-.inputs {
+.contact-inputs {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-form {
+.contacts-form {
 	max-width: 1000px;
 	min-width: 300px;
 	width: 70%;
@@ -14,8 +14,8 @@ form {
 	margin: 20px auto;
 }
 
-input,
-textarea {
+.contacts-form input,
+.contacts-form textarea {
 	border: 0;
 	outline: 0;
 	padding: 1em;
@@ -41,21 +41,36 @@ textarea {
 	background-color: white;
 }
 
-.half {
-	width: 48%;
-	margin-bottom: 1em;
-}
-
-.right {
+.form-section {
 	width: 50%;
+	margin-bottom: 1rem;
 }
 
 .left {
 	margin-right: 2%;
 }
 
-@media (max-width: 480px) {
-	.inputs {
+@media (max-width: 576px) {
+	#input-submit:hover {
+		color: white;
+		background-color: #e74c3c;
+	}
+}
+
+@media (max-width: 768px) {
+	.contacts-form {
+		width: 80%;
+	}
+
+	.contact-inputs {
 		flex-direction: column;
+	}
+
+	.form-section {
+		width: 100%;
+	}
+
+	.left {
+		margin: 0;
 	}
 }
